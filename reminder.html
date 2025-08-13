@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicine Reminder - HealthEase</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HealthEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="checker.html">Symptom Checker</a></li>
+      <li><a href="reminder.html" class="active">Medicine Tracker</a></li>
+      <li><a href="telemedicine.html">Telemedicine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero small">
+    <h1>Medicine Reminder & Tracker</h1>
+    <p>Never miss a dose. Set daily reminders for you or your loved ones.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <i class="fa-solid fa-bell"></i>
+      <h3>Timely Alerts</h3>
+      <p>Get reminded on time to take your medicines.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-user-nurse"></i>
+      <h3>For Family</h3>
+      <p>Track medicine for kids or elderly from one place.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-pills"></i>
+      <h3>Multiple Medicines</h3>
+      <p>Add as many reminders as you need — no limits.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Add a New Reminder</h2>
+    <form class="reminder-form">
+      <label for="med-name">Medicine Name:</label>
+      <input type="text" id="med-name" placeholder="e.g., Paracetamol" required />
+
+      <label for="dosage">Dosage (mg/ml):</label>
+      <input type="text" id="dosage" placeholder="e.g., 500 mg" required />
+
+      <label for="time">Time to Take:</label>
+      <input type="time" id="time" required />
+
+      <button type="submit" class="btn">Add Reminder</button>
+    </form>
+
+    <div id="reminder-list" class="output-box">
+      <h3>Your Reminders</h3>
+      <ul id="reminders">
+        
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthEase. All rights reserved.</p>
+  </footer>
+</body>
+</html>

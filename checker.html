@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Symptom Checker - HealthEase</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HealthEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="checker.html" class="active">Symptom Checker</a></li>
+      <li><a href="reminder.html">Medicine Tracker</a></li>
+      <li><a href="telemedicine.html">Telemedicine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero small">
+    <h1>AI Symptom Checker</h1>
+    <p>Describe what you're feeling, and get instant health insights using AI.</p>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="features">
+      <div class="card">
+        <i class="fa-solid fa-keyboard"></i>
+        <h3>Enter Symptoms</h3>
+        <p>Type what you're feeling, like "fever, cold, headache".</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-brain"></i>
+        <h3>AI Analysis</h3>
+        <p>Our model analyzes your input with medical insights.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-notes-medical"></i>
+        <h3>Get Suggestions</h3>
+        <p>Receive a list of possible conditions and next steps.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Check Your Symptoms</h2>
+    <form class="symptom-form">
+      <label for="symptoms">Describe Your Symptoms:</label>
+      <textarea id="symptoms" rows="6" placeholder="e.g., headache, fatigue, cough..."></textarea>
+      <button type="submit" class="btn">Analyze Symptoms</button>
+    </form>
+
+    <div id="ai-output" class="output-box hidden">
+      <h3>Possible Conditions</h3>
+      <p><em>Based on your symptoms, here are some potential matches:</em></p>
+      <ul id="suggestions">
+        <!-- Dynamic AI results appear here -->
+      </ul>
+    </div>
+  </section>
+
+  <section class="disclaimer">
+    <p><i class="fa-solid fa-triangle-exclamation"></i> This tool is for informational purposes only. It is not a substitute for professional medical advice or treatment.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthEase. All rights reserved.</p>
+  </footer>
+</body>
+</html>

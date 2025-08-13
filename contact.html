@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - HealthEase</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HealthEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="checker.html">Symptom Checker</a></li>
+      <li><a href="reminder.html">Medicine Tracker</a></li>
+      <li><a href="telemedicine.html">Telemedicine</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero small">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Please fill out the form below.</p>
+  </section>
+
+  <section class="form-section">
+    <form action="#" method="post" class="contact-form">
+      <fieldset>
+        <legend>Your Personal Details</legend>
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="e.g., John Doe"
+        />
+
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="e.g., john@example.com"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message</legend>
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          placeholder="Subject of your message"
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          placeholder="Type your message here..."
+        ></textarea>
+      </fieldset>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> support@healthease.com</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthEase. All rights reserved.</p>
+    <p>
+      Follow us on:
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </p>
+  </footer>
+</body>
+</html>

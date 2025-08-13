@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telemedicine - HealthEase</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HealthEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="checker.html">Symptom Checker</a></li>
+      <li><a href="reminder.html">Medicine Tracker</a></li>
+      <li><a href="telemedicine.html" class="active">Telemedicine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero small">
+    <h1>Telemedicine Appointments</h1>
+    <p>Consult licensed doctors online – from the safety of your home.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <i class="fa-solid fa-video"></i>
+      <h3>Video Consultations</h3>
+      <p>Meet doctors virtually using secure links.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-clock"></i>
+      <h3>Flexible Timing</h3>
+      <p>Book appointments when it suits you best.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-user-doctor"></i>
+      <h3>Verified Doctors</h3>
+      <p>Get care from certified medical professionals.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Book Your Appointment</h2>
+    <form class="appointment-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" placeholder="e.g., Rahul Sharma" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="e.g., rahul@example.com" required />
+
+      <label for="speciality">Select Speciality:</label>
+      <select id="speciality" required>
+        <option value="">-- Choose --</option>
+        <option value="general">General Physician</option>
+        <option value="dermatologist">Dermatologist</option>
+        <option value="pediatrician">Pediatrician</option>
+        <option value="gynecologist">Gynecologist</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" required />
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" required />
+
+      <button type="submit" class="btn">Book Appointment</button>
+    </form>
+
+    <div id="confirmation" class="output-box hidden">
+      <p>You will receive a video consultation link shortly via email.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthEase. All rights reserved.</p>
+  </footer>
+</body>
+</html>
